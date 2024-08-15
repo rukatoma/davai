@@ -2,6 +2,7 @@ circle = document.getElementById('circle');
 circleDodge = document.getElementById('circle-dodge');
 circleFrame = document.getElementById('scroll-frame');
 writeMachine = document.getElementById('write-machine');
+navLinks = document.getElementById('nav').children;
 
 a = window.innerHeight / 1.6;
 
@@ -28,6 +29,31 @@ window.addEventListener('scroll', function() {
     circle.style.height = pageYOffset * 1.3 + a + 'px';
     circle.style.top = 220 + pageYOffset * -0.5 + 'px';
     circle.style.left = 690 - pageYOffset * 0.5 + 'px';
+  }
+  if (pageYOffset > 270) {
+    navLinks[0].style.color = "#fff";
+  } else {
+    navLinks[0].style.color = "";
+  }
+  if (pageYOffset > 320) {
+    navLinks[1].style.color = "#fff";
+  } else {
+    navLinks[1].style.color = "";
+  }
+  if (pageYOffset > 370) {
+    navLinks[2].style.color = "#fff";
+  } else {
+    navLinks[2].style.color = "";
+  }
+  if (pageYOffset > 420) {
+    navLinks[3].style.color = "#fff";
+  }else {
+    navLinks[3].style.color = "";
+  }
+  if (pageYOffset > 470) {
+    navLinks[4].style.color = "#fff";
+  }else {
+    navLinks[4].style.color = "";
   }
   // if(circle.style.width > '85vw') {
   //   b = circle.style.top;
