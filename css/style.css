@@ -44,7 +44,7 @@ body {
 .nav-link {
   font-size: 20px;
   color: #0A4175;
-  transition: ease-in 0.2s;
+  transition: ease-in 0.1s;
 }
 
 .nav .nav-link:not(:last-child) {
